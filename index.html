@@ -65,6 +65,76 @@
             border-color: #ffffff;
             color: #000000;
         }
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 15px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #333333;
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+        .timeline-marker {
+            position: absolute;
+            left: -22px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            background: #ffffff;
+            border: 3px solid #333333;
+            border-radius: 50%;
+        }
+        .timeline-content {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #333333;
+            margin-left: 20px;
+        }
+        .timeline-content h5 {
+            color: #ffffff;
+            margin-bottom: 5px;
+        }
+        .timeline-content .text-muted {
+            color: #888888 !important;
+            font-size: 0.9em;
+        }
+        .timeline-content p {
+            color: #cccccc;
+            margin-bottom: 0;
+        }
+        .achievement-card {
+            background: #1a1a1a;
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid #333333;
+            text-align: center;
+            height: 100%;
+            transition: transform 0.3s ease;
+        }
+        .achievement-card:hover {
+            transform: translateY(-5px);
+        }
+        .achievement-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        .achievement-card h5 {
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+        .achievement-card p {
+            color: #cccccc;
+            margin-bottom: 0;
+        }
     </style>
 </head>
 <body>
@@ -78,6 +148,12 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#timeline">Journey</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#achievements">Achievements</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#publications">Publications</a>
@@ -114,7 +190,116 @@
             </div>
         </section>
         
-        <!---->
+        <section id="timeline" class="mb-5">
+            <h2 class="text-center mb-4">My Journey</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h5>IEEE SMC 2025 Publication</h5>
+                                <p class="text-muted">2025</p>
+                                <p>Paper accepted: "HSFN: Heterogeneous Ensemble for Fake News Detection" at IEEE International Conference.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h5>Short-term Exchange - USA</h5>
+                                <p class="text-muted">University of Pennsylvania | 2024</p>
+                                <p>English studies with Technology and Sustainability courses at UPenn.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h5>Master's in Computer Science</h5>
+                                <p class="text-muted">CIn-UFPE | 2022-2024</p>
+                                <p>Research in fake news detection using heterogeneous ensemble methods and automatic classifier selection.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h5>Data & AI Professional</h5>
+                                <p class="text-muted">2019-Present</p>
+                                <p>Working with data analysis, machine learning pipelines, NLP, Computer Vision, Ensemble Learning, Prompt Engineering, Prompt Context and Generative AI applications.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h5>University Exchange - France</h5>
+                                <p class="text-muted">Grenoble INP | 2017-2018</p>
+                                <p>Industrial Engineering studies during undergraduate exchange program.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h5>Bachelor's in Production Engineering</h5>
+                                <p class="text-muted">2013-2019</p>
+                                <p>Undergraduate degree in Production Engineering with international experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="achievements" class="mb-5">
+            <h2 class="text-center mb-4">Achievements & Recognition</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="achievement-card">
+                                <div class="achievement-icon">🏆</div>
+                                <h5>IEEE Publication</h5>
+                                <p>Accepted paper at IEEE SMC 2025 conference</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="achievement-card">
+                                <div class="achievement-icon">🌍</div>
+                                <h5>International Experience</h5>
+                                <p>Approved for 3 exchanges: Grenoble INP, Université de Franche-Comté, UPenn summer program</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="achievement-card">
+                                <div class="achievement-icon">🥉</div>
+                                <h5>Olympiad Medal</h5>
+                                <p>Bronze medal in Brazilian Astronomy Olympiad (2012)</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="achievement-card">
+                                <div class="achievement-icon">🔬</div>
+                                <h5>Research Innovation</h5>
+                                <p>Developed novel HSFN method for fake news detection</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="achievement-card">
+                                <div class="achievement-icon">🤖</div>
+                                <h5>AI Expertise</h5>
+                                <p>Specialized in ML, NLP, Computer Vision & Generative AI</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="achievement-card">
+                                <div class="achievement-icon">📊</div>
+                                <h5>Data Science</h5>
+                                <p>Expert in data analysis, visualization & predictive maintenance</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         <section id="publications" class="mb-5">
             <h2 class="text-center mb-4">My Publications</h2>
             <div class="row justify-content-center">
@@ -128,8 +313,7 @@
                 </div>
             </div>
         </section>
-        <!---->
-            
+        
         <section id="projects" class="mb-5">
             <h3 class="text-center mb-4">My Projects</h3>
             <div class="row justify-content-center">
