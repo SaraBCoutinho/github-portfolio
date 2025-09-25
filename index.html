@@ -8,19 +8,62 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
+            background-color: #000000;
+            color: #ffffff;
         }
         .jumbotron {
-            background-color: #e9ecef;
+            background-color: #1a1a1a;
             padding: 2rem 1rem;
             margin-bottom: 2rem;
             border-radius: .3rem;
+            border: 1px solid #333333;
         }
         .project-card {
-            border: 1px solid #dee2e6;
+            border: 1px solid #333333;
             border-radius: .25rem;
             padding: 1rem;
             margin-bottom: 1rem;
+            background-color: #1a1a1a;
+            color: #ffffff;
+        }
+        .navbar {
+            background-color: #1a1a1a !important;
+            border-bottom: 1px solid #333333;
+        }
+        .navbar-brand, .nav-link {
+            color: #ffffff !important;
+        }
+        .nav-link:hover {
+            color: #cccccc !important;
+        }
+        .btn-primary {
+            background-color: #ffffff;
+            border-color: #ffffff;
+            color: #000000;
+        }
+        .btn-primary:hover {
+            background-color: #cccccc;
+            border-color: #cccccc;
+            color: #000000;
+        }
+        .btn-info {
+            background-color: #ffffff;
+            border-color: #ffffff;
+            color: #000000;
+        }
+        .btn-info:hover {
+            background-color: #cccccc;
+            border-color: #cccccc;
+            color: #000000;
+        }
+        .btn-outline-secondary {
+            color: #ffffff;
+            border-color: #ffffff;
+        }
+        .btn-outline-secondary:hover {
+            background-color: #ffffff;
+            border-color: #ffffff;
+            color: #000000;
         }
     </style>
 </head>
@@ -74,8 +117,8 @@
         <!---->
         <section id="publications" class="mb-5">
             <h2 class="text-center mb-4">My Publications</h2>
-            <div class="row">
-                <div class="col-md-6 mb-4">
+            <div class="row justify-content-center">
+                <div class="col-md-8 mb-4">
                     <div class="card project-card">
                         <div class="card-body">
                             <h5 class="card-title">Publication HSFN</h5>
@@ -83,24 +126,23 @@
                         </div>
                     </div>
                 </div>
-                </div>
             </div>
-            </section>
+        </section>
         <!---->
             
         <section id="projects" class="mb-5">
             <h3 class="text-center mb-4">My Projects</h3>
-            <div class="row">
+            <div class="row justify-content-center">
+                <div class="col-md-8 mb-4">
                     <div class="card project-card">
                         <div class="card-body">
                             <h5 class="card-title">Project HSFN</h5>
                             <p class="card-text">Official implementation of HSFN. Repository: <a href="https://github.com/SaraBCoutinho/HSFN" class="btn btn-outline-secondary" target="_blank">GitHub Repo </a>.</p>
                         </div>
                     </div>
-                    </div>
                 </div>
             </div>
-            </section>
+        </section>
 
         <section id="contact" class="text-center mb-5">
             <h4 class="mb-4">Let's Connect</h4>
